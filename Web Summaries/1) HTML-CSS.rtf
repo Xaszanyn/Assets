@@ -1,0 +1,266 @@
+{\rtf1\ansi\ansicpg1254\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset162 Times New Roman;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil\fcharset238 Times New Roman;}{\f3\fnil\fcharset1 Cambria Math;}}
+{\colortbl ;\red255\green0\blue0;\red155\green0\blue211;\red255\green255\blue0;\red247\green150\blue70;\red0\green77\blue187;\red165\green165\blue165;}
+{\*\generator Riched20 10.0.18362}{\*\mmathPr\mmathFont3\mwrapIndent1440 }\viewkind4\uc1 
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b\f0\fs36\lang1055 CSS ELEMENT SE\f1\lang1033\'c7\f2\lang1055\u304?\f0 M\f2\u304?\f0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\ulnone ele1 ele2 \b0 => \cf1 ele1\cf0 'in i\f1\lang1033\'e7\f0\lang1055 inkeki t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele2\cf0 'ler.\par
+\b ele1>ele2 \b0 => \cf1 ele1\cf0 'in sadece bir alt\f2\u305?\f0 ndaki t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele2\cf0 'ler.\par
+\b ele1~ele2 \b0 => \cf1 ele1\cf0 'den sonra ayn\f2\u305?\f0  seviyedeki t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele2\cf0 'ler.\par
+\b ele1+ele2 \b0 => \cf1 ele1\cf0 'den sonra ayn\f2\u305?\f0  seviyedeki ilk \cf1 ele2\cf0 .\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b CSS FARKLI ELEMENT SE\f1\lang1033\'c7\f2\lang1055\u304?\f0 M\f2\u304?\f0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\ulnone ele[attr] \b0 => \cf1 attr\cf0 'a sahip olan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\b [attr] \b0 => \cf1 attr\cf0 'a sahip olan t\f1\lang1033\'fc\f0\lang1055 m \cf2 element\cf0 'ler\par
+\b ele[attr="inf"] \b0 => \cf1 attr\cf0 '\f2\u305?\f0  \cf1 inf \cf0 olan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\tab -> e\f2\u287?\f0 er eksik girilirse dahil edilmez. (tamamen ayn\f2\u305?\f0  olmak \tab zorunda.)\par
+\b ele[attr~="inf"] \b0 => \cf1 attr\cf0 'da \cf1 inf \cf0 s\f1\lang1033\'f6\f0\lang1055 zc\f1\lang1033\'fc\f0\lang1055 k olan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\tab -> bo\f2\'ba\f0 luklarla ayr\f2\u305?\f0 lan t\f1\lang1033\'fc\f0\lang1055 m yaz\f2\u305?\f0 lar s\f1\lang1033\'f6\f0\lang1055 zc\f1\lang1033\'fc\f0\lang1055 k kabul edilir.\par
+\b ele[attr^="inf"] \b0 => \cf1 attr\cf0 '\f2\u305?\f0  \cf1 inf \cf0 ile ba\f2\'ba\f0 layan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\b ele[attr$="inf"] \b0 => \cf1 attr\cf0 '\f2\u305?\f0  \cf1 inf \cf0 ile biten t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\tab -> \cf1 $\cf0  ve \cf1 ^\cf0  durumunda bo\f2\'ba\f0 luklu kabul edilir.\par
+\b ele[sta1][sta2] \b0 => iki \cf1 sta\cf0 's\f2\u305?\f0  da ge\f1\lang1033\'e7\f0\lang1055 erli olan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b PSEUDO\b0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\ulnone\b ele:sta \b0 => \cf1 sta \cf0 durumunda olan t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'ler.\par
+\tab -> \f1\lang1033\'f6\f0\lang1055 zel durumu ifade eder.\par
+\b ele::sta \b0 => t\f1\lang1033\'fc\f0\lang1055 m \cf1 ele\cf0 'lerin \cf1 sta \cf0 durumu.\par
+\tab -> \cf1 ele\cf0 'nin i\f1\lang1033\'e7\f0\lang1055 indeki sanal bir \cf2 element\cf0  gibi \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\u305?\f0 r.\par
+\b :nth-child(n) \b0 => herhangi bir \cf2 element\cf0 'in \cf1 n\cf0 'inci \cf1 item\cf0 'i.\par
+\b :first-child \b0 => herhangi bir \cf2 element\cf0 'in ilk \cf1 item\cf0 'i. \cf1 :nth-child(1)\cf0  ile ayn\f2\u305?\f0 d\f2\u305?\f0 r.\par
+\tab -> e\f2\u287?\f0 er \cf1 nth-child(n) \cf0 bir \cf2 element \cf1 item\cf0 'iyle kullan\f2\u305?\f0 l\f2\u305?\f0 rsa \cf1 (\f1\lang1033\'f6\f0\lang1055 rn: \tab\i item\i0 :nth-child(2)) \cf0 o \cf2 element\cf0 'in \cf1 n\cf0 'inci \cf1 item\cf0 'i farkl\f2\u305?\f0  ise i\f2\'ba\f0 e \tab yaramaz.\par
+\b :nth-of-type(n) \b0 => herhangi bir \cf2 element\cf0 'in i\f1\lang1033\'e7\f0\lang1055 inde bulunan ayn\f2\u305?\f0  \cf2 element \cf0 yap\f2\u305?\f0 s\f2\u305?\f0 na sahip \cf1 item\cf0 'lerin  \cf1 n\cf0 'inci \cf1 item\cf0 'i.\par
+\b :first-of-type \b0 => herhangi bir \cf2 element\cf0 'in i\f1\lang1033\'e7\f0\lang1055 inde bulunan ayn\f2\u305?\f0  \cf2 element \cf0 yap\f2\u305?\f0 s\f2\u305?\f0 na sahip \cf1 item\cf0 'lerin ilki. \cf1 :nth-of-type(1) \cf0 ile ayn\f2\u305?\f0 d\f2\u305?\f0 r.\par
+\tab -> \cf1 :nth-of-type(n) \cf0 tek ba\f2\'ba\u305?\f0 na kullan\f2\u305?\f0 l\f2\u305?\f0 rsa \cf2 element\cf0 'in i\f1\lang1033\'e7\f0\lang1055 indeki her \tab t\f1\lang1033\'fc\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055 n ilk \cf1 item\cf0 'lerini kapsar. e\f2\u287?\f0 er bir \cf2 element\cf0  \cf1 item\cf0 'iyle kullan\f2\u305?\f0 l\f2\u305?\f0 rsa \tab sadece o t\f1\lang1033\'fc\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055 n ilk \cf1 item\cf0 'ini kapsar.\par
+\tab -> bir \cf2 element\cf0 'in \cf1 n\cf0 'inci \cf1 item\cf0 'ini kapsamak i\f1\lang1033\'e7\f0\lang1055 in:\par
+\tab\tab\cf1\i element_name \i0 :nth-child(n) \{ ... \} \cf0 ya da\par
+\tab\tab\cf1\i element_name \i0 :nth-of-type(n) \{ ... \} \cf0\tab\tab\tab\tab\tab kullan\f2\u305?\f0 labilir. ikisinin de kapsam\f2\u305?\f0  ayn\f2\u305?\f0 d\f2\u305?\f0 r.\f1\lang1033\par
+\b\f0\lang1055 :not(sta) \b0 => herhangi bir \cf2 element\cf0 'in \cf1 sta\cf0  harici t\f1\lang1033\'fc\f0\lang1055 m durumlar\f2\u305?\f0 n\f2\u305?\f0  kapsar. \cf2 element \cf0 ile kullan\f2\u305?\f0 lmazsa t\f1\lang1033\'fc\f0\lang1055 m \cf2 element\cf0 'leri kapsayarak i\f2\'ba\f0 lemini yapar. \f1\lang1033\'fc\f0\lang1055 st \f1\lang1033\'fc\f0\lang1055 ste kullan\f2\u305?\f0 labilir ancak \highlight3\b FARKLI ELEMENT'LER \f2\u304?\f0 LE KULLANILAMAZ!\par
+\highlight0\b0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b\f1\lang1033\'d6\f0\lang1055 ZELL\f2\u304?\f0 K SIRALAMASI\b0\par
+\ulnone\b\i\fs22 inline > internal id > external id > internal cla > external cla > internal ele > external ele\par
+
+\pard\ri-1800\sa200\sl276\slmult1\b0\i0\fs36 yukardakilerden herhangi birinin \cf1 attr: inf !important; \cf0 yaz\f2\u305?\f0 lmas\f2\u305?\f0  durumunda \f1\lang1033\'f6\f0\lang1055 nplana o \cf1 inf \cf0\f1\lang1033\'e7\f2\lang1055\u305?\f0 kar.\par
+\tab -> i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 'lere \cf1 !important; \cf0 uygulansa bile \tab yukardakilerden biri varsa \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\f0 maz. \f2\u304?\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \tab\cf2 element\cf0 'ler \cf2 external\cf0  \cf1 ele\cf0 'den de sonra gelir.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b INLINE ELEMENT'LER\par
+
+\pard\ri-1800\sa200\sl276\slmult1\cf1\ulnone\b0 inline \cf2 element\cf0 'lerde \cf1 margin \cf0 ve \cf1 padding \cf0 sadece sa\f2\u287?\f0  ve sol taraf i\f1\lang1033\'e7\f0\lang1055 in \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\u305?\f0 r.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b EM \f2\u304?\f0 LE REM\par
+
+\pard\ri-1800\sa200\sl276\slmult1\ulnone em\b0  => i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 'e g\f1\lang1033\'f6\f0\lang1055 re y\f1\lang1033\'fc\f0\lang1055 zde de\f2\u287?\f0 i\f2\'ba\f0 im.\par
+\b rem\b0  => \cf1 html \cf2 element\cf0 'ine g\f1\lang1033\'f6\f0\lang1055 re y\f1\lang1033\'fc\f0\lang1055 zde de\f2\u287?\f0 i\f2\'ba\f0 im\par
+\tab -> \cf4 responsive \cf0 tasar\f2\u305?\f0 mlar i\f1\lang1033\'e7\f0\lang1055 in \cf1 rem\cf0 , \cf1 content\cf0  d\f1\lang1033\'fc\f0\lang1055 zenine g\f1\lang1033\'f6\f0\lang1055 re \tab tasar\f2\u305?\f0 mlar i\f1\lang1033\'e7\f0\lang1055 in \cf1 em \cf0 kullan\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\tab -> \cf1 em\cf0  ile \cf1 %\cf0  kullan\f2\u305?\f0 m\f2\u305?\f0  ayn\f2\u305?\f0  durumu ifade eder.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b HAP B\f2\u304?\f0 LG\f2\u304?\f0 LER\par
+
+\pard\ri-1800\sa200\sl276\slmult1\cf1\ulnone\b0 margin\cf0 'ler \f1\lang1033\'fc\f0\lang1055 st \f1\lang1033\'fc\f0\lang1055 ste binerler.\f1\lang1033\par
+\f0\lang1055 iki \cf1 inline-block \cf2 element\cf0 'i bo\f2\'ba\f0 luksuz yan yana getirmek i\f1\lang1033\'e7\f0\lang1055 in \cf2 element \cf0 aralar\f2\u305?\f0 ndaki beyaz bo\f2\'ba\f0 luk olmamal\f2\u305?\f0  veya beyaz bo\f2\'ba\f0 luklar yorum sat\f2\u305?\f0 r\f2\u305?\f0  ile kaplanmal\f2\u305?\f0 d\f2\u305?\f0 r.\par
+\b masonry layout: \b0 bir s\f1\lang1033\'fc\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055  \cf4 media\cf0 'n\f2\u305?\f0 n s\f1\lang1033\'fc\f0\lang1055 tunlar halinde ak\f2\u305?\'ba\f0  yapt\f2\u305?\u287?\u305?\f0  bir tasar\f2\u305?\f0 m \f2\'ba\f0 eklidir.\par
+\b background-postition: \cf1\b0\i percent_x percent_y\i0 ; \cf0\f2\'ba\f0 eklinde yaz\f2\u305?\f0 labilir.\par
+iki \cf1 class\cf0 'a birden sahip olan \cf2 element\cf0 'leri kapsamak i\f1\lang1033\'e7\f0\lang1055 in \cf1 .class_1.class_2 \cf0 uygulan\f2\u305?\f0 r.\ul\b\par
+\ulnone box/text-shadow:\b0  \cf5\i sa\f2\u287?\f0   alt  blur da\f2\u287?\u305?\f0 l\f2\u305?\f0 m* renk\i0 ;\cf0\par
+\tab -> * \cf5 da\f2\u287?\u305?\f0 l\f2\u305?\f0 m \cf0 net \cf5 renk\cf0 'e\cf5  \cf0 sahip, \cf2 element\cf0 'ten \cf5 blur\cf0 'a\cf5  \cf0 olan \tab uzakl\f2\u305?\f0 kt\f2\u305?\f0 r.\par
+\b (3) margin: \cf5\b0 yukar\f2\u305?\f0  sa\f2\u287?\f0 -sol a\f2\'ba\f0 a\f2\u287?\u305?\f0 ;\par
+\cf1 a:visited\cf0 'e\cf1  hover \cf0 ve \cf1 active \cf0 yap\f2\u305?\f0 labilir.\par
+\cf1 hover\cf0 , varolan bir durumdur. bir \cf2 element\cf0 , \cf2 class \cf0 veya \cf2 id \cf1 hover \cf0 durumuna geldi\f2\u287?\f0 inde ba\f2\'ba\f0 ka bir \cf2 element\cf0 , \cf2 class \cf0 veya \cf2 id \cf0 de\f2\u287?\f0 i\f2\'ba\f0 ebilir.\par
+\cf1 calc(inf1 \f1\lang1033\'b1\f0\lang1055  inf2) \cf2 metot\cf0 'u ile i\f2\'ba\f0 lem yap\f2\u305?\f0 labilir.\par
+\b box-sizing: content-box; \b0 varsay\f2\u305?\f0 lan boyutland\f2\u305?\f0 rma.\par
+\tab -> sadece \cf1 content \cf0 boyutland\f2\u305?\f0 r\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\b box-sizing: border-box; \cf1\b0 border \cf0 + \cf1 padding \cf0 + \cf1 content \cf0 boyutland\f2\u305?\f0 r\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\b column-count: \cf5\b0 adet; \cf1 content\cf0 'i adet say\f2\u305?\f0 s\f2\u305?\f0  kadar dikey olarak b\f1\lang1033\'f6\f0\lang1055 ler.\par
+\b z-index: \b0 s\f2\u305?\f0 f\f2\u305?\f0 rdan b\f1\lang1033\'fc\f0\lang1055 y\f1\lang1033\'fc\f0\lang1055 k bir de\f2\u287?\f0 er girildi\f2\u287?\f0 inde \cf2 element\cf0 'i \f1\lang1033\'f6\f0\lang1055 ne \f1\lang1033\'e7\f2\lang1055\u305?\f0 kar\f2\u305?\f0 r.\par
+bir \cf1 content\cf0 'i ba\f2\'ba\f0 ka bir \cf1 content\cf0 'in \f1\lang1033\'fc\f0\lang1055 st\f1\lang1033\'fc\f0\lang1055 ne getirerek yap\f2\u305?\f0 lan tasar\f2\u305?\f0 ma \cf4 overlay\cf0  denir.\par
+\cf1 <a> \cf2 element\cf0 'i (link) i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 'lerden \f1\lang1033\'f6\f0\lang1055 zellik almaz. Almas\f2\u305?\f0  i\f1\lang1033\'e7\f0\lang1055 in \cf1 a \{ attr: inherit; \} \cf0 yaz\f2\u305?\f0 lmas\f2\u305?\f0  gerekir.\par
+\b clip-path: \b0 ile \cf1 content\cf0 'e kesme i\f2\'ba\f0 lemi yap\f2\u305?\f0 labilir.\par
+\cf1 <input> \cf2 element\cf0 'lerinde \cf1 hover \cf0 yerine \cf1 focus \cf0 vard\f2\u305?\f0 r.\par
+\b\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul KONUMLANDIRMA\par
+\ulnone\i static / relative / absolute / fixed / sticky\par
+
+\pard\ri-1800\sa200\sl276\slmult1\i0 static: \b0 varsay\f2\u305?\f0 lan konum.\par
+\b relative\b0 : varsay\f2\u305?\f0 lan konumundan hareket ettirilir, di\f2\u287?\f0 er \cf2 element\cf0 'lerin konumunu etkilemez.\par
+\b absolute:\b0  i\f1\lang1033\'e7\f0\lang1055 ten d\f2\u305?\'ba\f0 a do\f2\u287?\f0 ru bulundu\f2\u287?\f0 u konumu ilk \cf1 relative \cf0 olan \cf2 element\cf0 'e g\f1\lang1033\'f6\f0\lang1055 re konumland\f2\u305?\f0 r\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\tab -> \cf1 relative \cf0 bir \cf2 element\cf0  bulunmazsa kendini ekrana g\f1\lang1033\'f6\f0\lang1055 re \tab konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\b fixed: \b0 ekrana g\f1\lang1033\'f6\f0\lang1055 re sabit konumland\f2\u305?\f0 r\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\b sticky:\b0  varsay\f2\u305?\f0 lan konumu belirlendi\f2\u287?\f0 i konumdan ayr\f2\u305?\f0 l\f2\u305?\f0 nca sabit konumlan\f2\u305?\f0 r.\par
+\tab -> bir \cf2 element\cf0 'in \cf1 position\cf0 'unu \cf1 sticky\cf0  yapmak \tab boyutunun \tab kaplad\f2\u305?\u287?\u305?\f0  \cf1 content\cf0 'e g\f1\lang1033\'f6\f0\lang1055 re de\f2\u287?\f0 i\f2\'ba\f0 mesine sebep olur.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b TEM\f2\u304?\f0 ZL\f2\u304?\f0 K\par
+
+\pard\ri-1800\sa200\sl276\slmult1 clearfix:\ulnone\b0\par
+\tab\cf1 .clearfix \{ content: ""; display: block; clear: both; \} \tab float\cf0 'lanan \cf2 element\cf0 'lerin i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 'in \cf2 class\cf0 '\f2\u305?\f0 na \tab yaz\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\ul\b ayr\f2\u305?\f0  clearfix:\par
+\ulnone\b0\tab\cf1 float\cf0 'lanan \cf2 element\cf0 'lerin sonuna:\par
+\tab\cf1 <div style="clear: both;"></div> \cf0 yaz\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\ul\b overflow:\ulnone\b0\par
+\tab\cf1 overflow: auto; float\cf0 'lanan \cf2 element\cf0 'lerin i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 'in \cf2 stil\cf0 'ine yaz\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b FLEX\par
+
+\pard\ri-1800\sa200\sl276\slmult1\ulnone (container d\f1\lang1033\'fc\f0\lang1055 zeyinde) display: flex; \b0 atanan \cf2 element\cf0 'in alt\f2\u305?\f0 ndaki \cf2 element\cf0 'ler \cf1 inline-block \cf0\f1\lang1033\'f6\f0\lang1055 zelli\f2\u287?\f0 ine sahip olur.\par
+\b flex-direction: row; \b0 (varsay\f2\u305?\f0 lan) soldan sa\f2\u287?\f0 a s\f2\u305?\f0 ralar.\par
+\b flex-direction: column; \b0 yukardan a\f2\'ba\f0 a\f2\u287?\u305?\f0 ya do\f2\u287?\f0 ru s\f2\u305?\f0 ralar.\par
+\tab -> \cf1 row-reverse \cf0 ve \cf1 column-reverse \cf0 s\f2\u305?\f0 ralaman\f2\u305?\f0 n y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055  tam \tab de\f2\u287?\f0 i\f2\'ba\f0 tirir.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b\i s\f2\u305?\f0 ralanma y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055  > (-) / s\f2\u305?\f0 ralanma y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 n tersi (|)\b0\i0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\tab -> (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 ndeki uzunluk de\f2\u287?\f0 i\f2\'ba\f0 ti\f2\u287?\f0 i zaman ve \tab\cf1 content\cf0 'lerin (|) \tab uzunlu\f2\u287?\f0 u belirli de\f2\u287?\f0 ilse \cf1 content \cf0 esner. d\f1\lang1033\'fc\f0\lang1055 zeltmek i\f1\lang1033\'e7\f0\lang1055 in \cf1 align-\tab items \cf0 kullan\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\b flex-wrap: \b0 varsay\f2\u305?\f0 lan de\f2\u287?\f0 eri \cf1 no-wrap\cf0 'tir. \cf1 wrap\cf0  durumuna getirildi\f2\u287?\f0 inde \cf1 item\cf0 'ler ta\f2\'ba\f0 t\f2\u305?\u287?\u305?\f0  zaman bir sonraki yere ge\f1\lang1033\'e7\f0\lang1055 er.\par
+\b flex-flow: \cf5\b0 flex-direction flex-wrap; \cf0\f1\lang1033\'f6\f0\lang1055 zelli\f2\u287?\f0 ine sahiptir.\par
+\cf1 justify\cf0  (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 ndeki durumu, \cf1 align\cf0  ise (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 ndeki durumu kontrol eder.\par
+\cf1 content\cf0  t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'lerin olu\f2\'ba\f0 umudur.\par
+yani herhangi bir flex'in row ve wrap durumunda:\par
+\tab\b justify-content: \b0 -yatay-  t\f1\lang1033\'fc\f0\lang1055 m i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i konumland\f2\u305?\f0 rma\par
+\tab\b align-content: \b0 -dikey- t\f1\lang1033\'fc\f0\lang1055 m i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i konumland\f2\u305?\f0 rma\b\par
+\tab align-items: \b0 -dikey- s\f2\u305?\f0 ralanmay\f2\u305?\f0  hizalama i\f2\'ba\f0 lemini yapar.\par
+\b\tab\highlight3 justify-items FLEX'TE MEVCUT DE\f2\u286?\u304?\f0 LD\f2\u304?\f0 R!\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\highlight0 >>>-<<<\cf3\b0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\cf0\b justify-content: flex-start; \b0 (varsay\f2\u305?\f0 lan) \b  \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde ba\f2\'ba\f0 tan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |OOOO--------|\par
+
+\pard\ri-1800\sa200\sl276\slmult1 justify-content: flex-end; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde sondan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |--------OOOO|\par
+
+\pard\ri-1800\sa200\sl276\slmult1 justify-content: center; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde ortadan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |----OOOO----|\par
+
+\pard\ri-1800\sa200\sl276\slmult1 justify-content: space-between; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'lerin aras\f2\u305?\f0 na e\f2\'ba\f0 it d\f1\lang1033\'fc\f0\lang1055 zeyde bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r. kenarlarda bo\f2\'ba\f0 luk olmaz.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |O--O--O--O|\par
+
+\pard\ri-1800\sa200\sl276\slmult1 justify-content: space-around; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde her \cf1 item\cf0 'in \f1\lang1033\'e7\f0\lang1055 evresine bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |-O--O--O--O-|\par
+
+\pard\ri-1800\sa200\sl276\slmult1 justify-content: space-evenly; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde kenarlar dahil her araya e\f2\'ba\f0 it bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b |--O--O--O--O--|\par
+
+\pard\ri-1800\sa200\sl276\slmult1\tab\b0 -> e\f2\u287?\f0 er \cf1 content container\cf0 '\f2\u305?\f0  (-) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde dolduracak kadar fazla \tab\cf1 item \cf0 bar\f2\u305?\f0 nd\f2\u305?\f0 r\f2\u305?\f0 yorsa \cf1 justify-content\cf0 'in hi\f1\lang1033\'e7\f0\lang1055 bir \f2\'ba\f0 ekilde de\f2\u287?\f0 eri \tab yoktur.\b\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc >>>-<<<\par
+
+\pard\ri-1800\sa200\sl276\slmult1 align-content: stretch; \b0 (varsay\f2\u305?\f0 lan) i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 ndeki t\f1\lang1033\'fc\f0\lang1055 m alan\f2\u305?\f0  kaplat\f2\u305?\f0 r.\par
+\b align-content: flex-start; \b0 (varsay\f2\u305?\f0 lan) \b  \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde ba\f2\'ba\f0 tan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\b align-content: flex-end; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde sondan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\b align-content: center; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde ortadan konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\b align-content: space-between; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'lerin aras\f2\u305?\f0 na e\f2\'ba\f0 it d\f1\lang1033\'fc\f0\lang1055 zeyde bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r. kenarlarda bo\f2\'ba\f0 luk olmaz.\par
+\b align-content: space-around; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde her \cf1 item\cf0 'in \f1\lang1033\'e7\f0\lang1055 evresine bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\b align-content: space-evenly; \b0 i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 i\b  \b0 (|) y\f1\lang1033\'f6\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 nde kenarlar dahil her araya e\f2\'ba\f0 it bo\f2\'ba\f0 luk b\f2\u305?\f0 rakarak tam konumland\f2\u305?\f0 r\f2\u305?\f0 r.\par
+\tab -> e\f2\u287?\f0 er \cf1 container\cf0 '\f2\u305?\f0 n \cf1 height \cf0 de\f2\u287?\f0 eri yoksa \cf1 align-content\cf0 'in hi\f1\lang1033\'e7\f0\lang1055 bir \tab\f2\'ba\f0 ekilde de\f2\u287?\f0 eri yoktur.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b >>>-<<<\par
+
+\pard\ri-1800\sa200\sl276\slmult1 align-items: stretch; \b0 (varsay\f2\u305?\f0 lan) kendisine ayr\f2\u305?\f0 lan (|) bo\f2\'ba\f0 lu\f2\u287?\f0 u kaplar.\par
+\b align-items:\b0  \b flex-start; \b0 t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'ler kendisine ayr\f2\u305?\f0 lan (|) bo\f2\'ba\f0 lukta en yukar\f2\u305?\f0 dan hizalan\f2\u305?\f0 r.\par
+\b align-items: flex-end;\b0  t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'ler kendisine ayr\f2\u305?\f0 lan (|) bo\f2\'ba\f0 lukta en a\f2\'ba\f0 a\f2\u287?\u305?\f0 dan hizalan\f2\u305?\f0 r.\par
+\b align-items: center; \b0 t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'ler kendisine ayr\f2\u305?\f0 lan (|) bo\f2\'ba\f0 lukta ortadan hizalan\f2\u305?\f0 r.\par
+\b align-items: baseline; \b0 t\f1\lang1033\'fc\f0\lang1055 m \cf1 item\cf0 'ler kendi i\f1\lang1033\'e7\f0\lang1055 lerinde bulunan \cf1 content\cf0 'in \cf1 baseline\cf0  (yaz\f2\u305?\f0 larda ilk sat\f2\u305?\f0 r\f2\u305?\f0 n en alt noktas\f2\u305?\f0 ) k\f2\u305?\f0 sm\f2\u305?\f0 ndan hizalan\f2\u305?\f0 r.\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\b >>>-<<<\b0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\b (item d\f1\lang1033\'fc\f0\lang1055 zeyinde) order: \b0 s\f2\u305?\f0 f\f2\u305?\f0 rdan farkl\f2\u305?\f0  bir de\f2\u287?\f0 er girildi\f2\u287?\f0 inde \cf2 element\cf0 'in dizideki s\f2\u305?\f0 ras\f2\u305?\f0 n\f2\u305?\f0  de\f2\u287?\f0 i\f2\'ba\f0 tirir.\b\par
+flex-grow: \b0 s\f2\u305?\f0 f\f2\u305?\f0 rdan b\f1\lang1033\'fc\f0\lang1055 y\f1\lang1033\'fc\f0\lang1055 k bir de\f2\u287?\f0 er girildi\f2\u287?\f0 inde kalan alan\f2\u305?\f0  kaplar.\par
+\tab -> birden fazla \cf1 flex-grow \cf0 varsa say\f2\u305?\f0 sal oranlar\f2\u305?\f0 na \tab g\f1\lang1033\'f6\f0\lang1055 re \tab kalan alan payla\f2\'ba\u305?\f0 l\f2\u305?\f0 r.\par
+\tab -> boyutlar\f2\u305?\f0  belirli olmayan \cf1 content\cf0 'lere \cf1 flex-grow\cf0  \tab uygulanmas\f2\u305?\f0  hatalara sebep verebilir \f1\lang1033\'e7\'fc\f0\lang1055 nk\f1\lang1033\'fc\f0\lang1055  \cf1 content\cf0 'in \tab\cf1 width \tab\cf0 de\f2\u287?\f0 eri de\f2\u287?\f0 i\f2\'ba\f0 ti\f2\u287?\f0 inde kalan alan de\f2\u287?\f0 i\f2\'ba\f0 ece\f2\u287?\f0 i i\f1\lang1033\'e7\f0\lang1055 in \cf1 flex-grow \tab\cf0 oranlar\f2\u305?\f0  olan \cf1 content\cf0 'lerin kaplad\f2\u305?\u287?\u305?\f0  alanlar\f2\u305?\f0  \tab kesin olarak \tab belirleyemeyiz. bundan dolay\f2\u305?\f0  tam oran belirlemek i\f1\lang1033\'e7\f0\lang1055 in \cf1 flex-\tab basis \cf0 kullanmak daha mant\f2\u305?\f0 kl\f2\u305?\f0 d\f2\u305?\f0 r.\cf6\par
+\cf1\tab\cf0 -> \cf1 flex: \cf5 flex-grow; \cf0 olarak da kullan\f2\u305?\f0 labilir.\par
+\b flex-basis: \b0 kalan alan\f2\u305?\f0 n ya da \cf1 flex-wrap: wrap \cf0 olan \cf1 container\cf0 'larda alan\f2\u305?\f0 n da\f2\u287?\u305?\f0 l\f2\u305?\f0 m\f2\u305?\f0 n\f2\u305?\f0  d\f1\lang1033\'fc\f0\lang1055 zenler.\par
+\tab -> \cf1 nowrap\cf0  \f1\lang1033\'f6\f0\lang1055 zelli\f2\u287?\f0 i i\f1\lang1033\'e7\f0\lang1055 inde sat\f2\u305?\f0 r\f2\u305?\f0 n\f2\u305?\f0 n \cf1 item\cf0 'lerinin kulland\f2\u305?\u287?\u305?\f0  alan \tab d\f2\u305?\'ba\u305?\f0 nda kalan alan payla\f2\'ba\u305?\f0 l\f2\u305?\f0 r.\par
+\tab -> \cf1 wrap\cf0  \f1\lang1033\'f6\f0\lang1055 zelli\f2\u287?\f0 i i\f1\lang1033\'e7\f0\lang1055 inde ise t\f1\lang1033\'fc\f0\lang1055 m sat\f2\u305?\f0 r\f2\u305?\f0 n alan\f2\u305?\f0  payla\f2\'ba\u305?\f0 l\f2\u305?\f0 r. \tab e\f2\u287?\f0 er bir \tab\cf1 item\cf0 'in kalaca\f2\u287?\u305?\f0  bo\f2\'ba\f0 luk kadar alan kal\f2\u305?\f0 rsa o \tab\cf1 item\cf0  dizilir.\par
+\tab -> geni\f2\'ba\f0 lik i\f1\lang1033\'e7\f0\lang1055 in\cf1  flex-basis \cf0 > \cf1 width \cf0 > \cf1 item\cf0 'in kaplad\f2\u305?\u287?\u305?\f0  \tab alan \tab\f2\'ba\f0 eklinde \f1\lang1033\'f6\f0\lang1055 ncelik tan\f2\u305?\f0 n\f2\u305?\f0 r.\par
+\tab -> \cf1 flex-basis\cf0 , \cf1 max-width \cf0 ve \cf1 min-width\cf0  (ya da \cf1 height \tab\cf0 de\f2\u287?\f0 erleri) de\f2\u287?\f0 eri ile kontrol alt\f2\u305?\f0 na al\f2\u305?\f0 nabilir.\par
+\tab -> \cf1 flex-basis: 0; \cf0 oldu\f2\u287?\f0 u zaman \cf1 item\cf0 'in kaplad\f2\u305?\u287?\u305?\f0  alan \tab kaplayabilece\f2\u287?\f0 i minimum alan kadar k\f1\lang1033\'fc\'e7\'fc\f0\lang1055 l\f1\lang1033\'fc\f0\lang1055 r. \cf1 flex-\tab basis: \tab auto; \cf0 durumunda ise kaplayabilece\f2\u287?\f0 i t\f1\lang1033\'fc\f0\lang1055 m alan\f2\u305?\f0  \tab kaplar.\par
+\b flex-shrink: \b0 (varsay\f2\u305?\f0 lan) 1 durumunda \cf1 item \cf0 k\f1\lang1033\'fc\'e7\'fc\f0\lang1055 lebilme \f1\lang1033\'f6\f0\lang1055 zelli\f2\u287?\f0 ine sahip olur. 0 durumunda ise \cf1 item \cf0 k\f1\lang1033\'fc\'e7\'fc\f0\lang1055 lmez.\par
+\tab -> girilen de\f2\u287?\f0 erin form\f1\lang1033\'fc\f0\lang1055 l\f1\lang1033\'fc\f0\lang1055  \f2\'ba\f0 u \f2\'ba\f0 ekildedir:\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\tab\b\i\fs28 flex-basis * ( 1 + ( flex-shrink / toplam_fakt\f1\lang1033\'f6\f0\lang1055 r ) * ta\f2\'ba\f0 an_alan )\par
+\tab [ toplam_fakt\f1\lang1033\'f6\f0\lang1055 r = item_1_basis * item_1_shrink + item_2_basis * \tab item_2_shrink ... item_n_basis * item_n_shrink ]\par
+\tab [ ta\f2\'ba\f0 an_alan mutlaka negatif de\f2\u287?\f0 er ile hesaplanmal\f2\u305?\f0 d\f2\u305?\f0 r. ]\par
+
+\pard\ri-1800\sa200\sl276\slmult1\tab\b0\i0\f1\fs36\lang1033\'f6\f0\lang1055 rne\f2\u287?\f0 in 600px'lik \cf1 container\cf0 '\f2\u305?\f0 n 600px (\cf1 shrink \cf0 = 2) ve \tab 200px \tab (\cf1 shrink \cf0 = 1) \cf1 item\cf0 'lerini hesaplayal\f2\u305?\f0 m:\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\tab\b\i toplam_fakt\f1\lang1033\'f6\f0\lang1055 r = 2 * 600 + 1 * 200 = 1400\par
+\tab 600 * ( 1 + ( 2 / 1400 ) * -200 ) \f3\u8776?\f0\lang1055  429px\par
+\tab 200 * ( 1 + ( 1 / 1400 ) * -200 ) \f3\u8776?\f0\lang1055  171px\par
+
+\pard\ri-1800\sa200\sl276\slmult1\i0 flex: \cf5\b0 flex-grow flex-shrink flex-basis; \cf0\f2\'ba\f0 eklindedir. varsay\f2\u305?\f0 lan de\f2\u287?\f0 erleri ise \cf1 "0 1 auto" \cf0\f2\'ba\f0 eklindedir.\par
+\b flex: \i inf\i0 ; \b0 => \cf5 flex-grow: \i inf\i0 ; flex-shrink: 1; flex-basis: 0;\par
+\cf0\b flex: auto; \b0 =>\cf5  flex-grow: 1; flex-shrink: 1; flex-basis: auto;\par
+\cf0\b flex: none; \b0 => \cf5 flex-grow: 0; flex-shrink: 0; flex-basis: auto;\par
+\cf0\b flex: \i grow-inf basis-inf\i0 ; \b0 durumunda \cf5 shrink: 1;\par
+\cf0\b flex: \i grow-inf shrink-inf\i0 ; \b0 durumunda \cf5 basis: 0; \cf0 olur.\par
+\b\i\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\i0 TAM ORTALAMA\par
+\ulnone\i container (display = flex)\par
+
+\pard\ri-1800\sa200\sl276\slmult1\b0\i0 durumuna getirdikten sonra,\ul\b\par
+\ulnone\b0 hem yatay hem dikey ortalama \f2\'ba\f0 u \f2\'ba\f0 ekildedir:\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\tab\b\i item (margin = auto)\par
+
+\pard\ri-1800\sa200\sl276\slmult1\b0\i0 istenilen y\f1\lang1033\'f6\f0\lang1055 ne hizalama ise \f2\'ba\f0 u \f2\'ba\f0 ekildedir:\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\tab\b\i\fs32 item (margin-top/bottom = auto, margin-left/right = auto)\par
+
+\pard\ri-1800\sa200\sl276\slmult1\cf4\b0\i0\fs36 nav-bar \cf0 gibi k\f2\u305?\f0 s\f2\u305?\f0 mlar\f2\u305?\f0  olu\f2\'ba\f0 turmak i\f1\lang1033\'e7\f0\lang1055 in \cf1 margin-left: auto; \cf0 yaz\f2\u305?\f0 lmas\f2\u305?\f0  yeterlidir. ancak \cf1 container\cf0 '\f2\u305?\f0 n \cf1 align-item\cf0 '\f2\u305?\f0  \cf1 stretch \cf0 durumunda olmamas\f2\u305?\f0  gerekir.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b MEDIA QUERRIES\par
+
+\pard\ri-1800\sa200\sl276\slmult1\cf4\ulnone\b0 syntax\cf0 '\f2\u305?\f0  \cf1 @media \i type \i0 and (\i state\i0  and/or \i state\i0 ..) \{ ... \} \cf0\f2\'ba\f0 eklindedir.\par
+(\f1\lang1033\'f6\f0\lang1055 zellikle mobilde) daha \cf4 responsive \cf0 bir tasar\f2\u305?\f0 m elde etmek i\f1\lang1033\'e7\f0\lang1055 in yak\f2\u305?\f0 nla\f2\'ba\f0 t\f2\u305?\f0 rmay\f2\u305?\f0  kapatabiliriz:\par
+\b\tab\cf1\b0 <meta name="viewport" content="width=device-\tab width, \tab initial-scale=1.0">\par
+\cf0\tab veya,\par
+\cf1\tab <meta name="viewport" content="width=device-width, user-\tab scalable=no">\par
+\cf0 optimum \cf4 breakpoint\cf0  noktalar\f2\u305?\f0  \f2\'ba\f0 u \f2\'ba\f0 ekildedir:\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\i\tab\b . - 480   |   481 - 768   |   769 - 1200   |   1201 - .\i0\par
+
+\pard\ri-1800\sa200\sl276\slmult1\b0\tab duruma g\f1\lang1033\'f6\f0\lang1055 re 1200px yerine 1024px de girilebilir.\par
+ayr\f2\u305?\f0  olarak \cf2 css \cf0 dosyas\f2\u305?\f0  yazmak istersek:\par
+\tab\cf1 <link rel="stylesheet" media="\i type\i0  and (\i state\i0 )" \tab href="location">\par
+\cf0\tab\f2\'ba\f0 eklinde ay\f2\u305?\f0 rabiliriz.\par
+\par
+
+\pard\ri-1800\sa200\sl276\slmult1\qc\ul\b SCSS\ulnone\i\par
+
+\pard\ri-1800\sa200\sl276\slmult1\i0 variable:\b0\par
+\tab\cf1 $variable-name: inf;\par
+\tab attr: $variable-name; \cf0\f2\'ba\f0 eklinde her \cf1 attr\cf0 'da kullan\f2\u305?\f0 labilir.\par
+\tab\tab -> \cf1 color attr\cf0 '\f2\u305?\f0  i\f1\lang1033\'e7\f0\lang1055 in \cf1 darken(color_var, percent); \tab\tab\tab\tab\cf0 veya \cf1 lighten(color_var, percent); \cf2 metot\cf0 'u \tab\tab\tab\tab\tab kullan\f2\u305?\f0 labilir.\par
+\b nesting:\b0\par
+\tab\cf1 ul \{ ... \}   ul li \{ ... \} \cf0 yerine\par
+\tab\cf1 ul \{ ... li \{ ... \} \} \cf0\f2\'ba\f0 eklinde i\f1\lang1033\'e7\f0\lang1055  i\f1\lang1033\'e7\f0\lang1055 e kullan\f2\u305?\f0 labilir.\par
+\tab\tab -> \cf1 &\cf0  i\f2\'ba\f0 areti i\f1\lang1033\'e7\f0\lang1055 inde bulundu\f2\u287?\f0 u \cf2 element\cf0 , \cf2 class \cf0 veya \tab\tab\tab\cf2 id\cf0 'nin ismini ta\f2\'ba\u305?\f0 r.\i  \fs32 (\f1\lang1033\'f6\f0\lang1055 rn: \cf1 .button \{ ... &:hover \{ ... \} \}\cf0 )\par
+\b\i0\fs36 mixin:\b0\par
+\tab\cf4 parametre\cf0 'lere sahip olabilen ve ayn\f2\u305?\f0  bir \cf4 fonksiyon\cf0  gibi \tab\f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\f0 an \cf2 class\cf0 't\f2\u305?\f0 r.\par
+\tab\cf1 @mixin \i name\i0  \{ ... \} / @mixin \i name\i0 (\i value(s)\i0 ) \{ ... \}\par
+\tab\i .class_name\i0  \{ @include \i name\i0 ; ... \}\cf0  \f2\'ba\f0 eklinde uygulan\f2\u305?\f0 r.\par
+\tab\tab -> \cf1 @mixin\cf0 'in i\f1\lang1033\'e7\f0\lang1055 inde bulunan t\f1\lang1033\'fc\f0\lang1055 m yaz\f2\u305?\f0 lar \tab\tab\tab\tab\cf1 @include\cf0 'lanan \cf2 element\cf0 , \cf2 class \cf0 veya \cf2 id\cf0 'ye aktar\f2\u305?\f0 l\f2\u305?\f0 r.\par
+\tab\tab -> \cf4 parametre\cf0 'lerinde attr bulunabilir ve de\f2\u287?\f0 er \tab\tab\tab\tab atanabilir. hatta atanan de\f2\u287?\f0 er ba\f2\'ba\f0 ka bir \cf4 parametre \tab\tab\tab\cf0 olabilir. \i (\f1\lang1033\'f6\f0\lang1055 rn: \cf1 @include apply(float, left);\cf0 )\par
+\b\i0 extends:\b0\par
+\tab daha iyi \cf4 DRY \cf0 yazabilmek i\f1\lang1033\'e7\f0\lang1055 in herhangi bir \cf2 class\cf0 '\f2\u305?\f0  \tab ba\f2\'ba\f0 ka \tab\cf2 class\cf0 'lara (vb.) \cf1 @extend\cf0 'leyerek ortak paranteze \tab alabiliriz.\par
+\tab\cf1\i %unvisible_name \i0\{ ... \} \i .class_names \i0\{ @extends \tab\tab\i unvisible_name\i0 ; ... \}\par
+\tab\i .name_1\i0 , \i .name_2\i0 , \i .name_3 \i0\{ ... \} \cf0 haline getirilebilir.\par
+\tab\tab -> \cf1 %\cf0  i\f2\'ba\f0 aretli \cf1 class \cf0 as\f2\u305?\f0 l \cf2 css \cf0 dosyas\f2\u305?\f0 nda g\f1\lang1033\'f6\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055 nmez. \tab\tab\tab\tab e\f2\u287?\f0 er \cf1 %\cf0  i\f2\'ba\f0 areti konmazsa ortak parantezde o \cf1 class \cf0 da \tab\tab\tab g\f1\lang1033\'f6\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055 n\f1\lang1033\'fc\f0\lang1055 r.\b\i\fs24\par
+}
+ 
