@@ -1,0 +1,15 @@
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\bin\Debug\net6.0\Reversing.exe
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\bin\Debug\net6.0\Reversing.deps.json
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\bin\Debug\net6.0\Reversing.runtimeconfig.json
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\bin\Debug\net6.0\Reversing.dll
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\bin\Debug\net6.0\Reversing.pdb
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.csproj.AssemblyReference.cache
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.AssemblyInfoInputs.cache
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.AssemblyInfo.cs
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.csproj.CoreCompileInputs.cache
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.dll
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\refint\Reversing.dll
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.pdb
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\Reversing.genruntimeconfig.cache
+C:\Users\Ekin\Desktop\𝖄𝖒𝖕𝖗𝖆\C#\Reversing\Reversing\obj\Debug\net6.0\ref\Reversing.dll
