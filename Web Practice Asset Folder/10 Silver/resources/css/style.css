@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: Heebo, Arial;
+}
+a {
+    text-decoration: none;
+}
+body {
+    padding-top: 150px;
+}
+/*================================================== NAV =*/
+nav {
+    height: 180px;
+    margin: 0 5%;
+    
+}
+.logo {
+    float: left;
+    height: 180px;
+}
+h1 {
+    float: left;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 54px 0 0 20px;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    float: left;
+    list-style-type: none;
+    margin: 72px 0 0 35px;
+    font-size: 90%;
+}
+.nav li a:link, .nav li a:visited {
+    color: #E0DDDD;
+    font-size: 120%;
+    border: 3px solid transparent;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+.nav li a:hover, .nav li a:active {
+    color: #FFF;
+    border-bottom: 3px solid #FFF;
+}
+/*=============================================== HEADER =*/
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/resources/img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #E0DDDD;
+}
+.hero {
+    position: absolute;
+    width: 1140px;
+    top: 45%;
+    left: 7%;
+}
+h2 {
+    font-size: 225%;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.normal:link, .normal:visited, .orange:link, .orange:visited {
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: 3px solid #E64F00;
+    color: #E0DDDD;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.7s;
+}
+.normal:link, .normal:visited {
+    background-color: transparent;
+}
+.orange:link, .orange:visited {
+    background-color: rgba(230, 79, 0, 0.7);
+}
+.orange:hover, .orange:active, .normal:hover, .normal:active {
+    background-color: #E64F00;
+    border: 3px solid #E0DDDD;
+}

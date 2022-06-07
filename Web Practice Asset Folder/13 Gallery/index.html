@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ekin's Galerry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+                font-family: 'Lato', sans-serif;
+        }
+        h1 {
+            font-family: 'Sansita Swashed', cursive;
+                color: #FFF;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav a {
+            color: #FFF;
+                text-decoration: none;
+        }
+        h2 {
+            color: #FFF;
+        }
+        
+        .button {
+                border-radius: 2rem;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                display: inline-block;
+            }
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 3rem;
+        }
+        h3 {
+            text-align: center;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .clearfix::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        @media screen and (min-width: 776px) and (max-width:1000000px) { /* WHAT THE ACTUAL FUCK? */
+
+            body {
+                background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #hidden {
+                display: none;
+            }
+            html {
+                font-size: 24px;
+            }
+
+            body {
+                word-spacing: 0.2rem;
+
+            }
+
+            header {
+                margin: 1rem;
+            }
+
+            nav {
+                width: 100%;
+                height: 6rem;
+                border-radius: 3rem;
+            }
+
+            nav img {
+                width: 5rem;
+                border: 0.2rem solid #8D0000;
+                border-radius: 50%;
+                margin: 0.5rem;
+                float: left;
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin: 1rem;
+                float: left;
+            }
+
+            nav ul {
+                float: right;
+            }
+
+            nav li {
+                float: left;
+                display: inline-block;
+                margin-right: 2rem;
+                margin-top: 2.4rem;
+            }
+
+            nav a {
+                transition: all 0.3s;
+                font-size: 1.2rem;
+            }
+
+            nav a:hover {
+                color: #8D0000;
+                text-decoration: underline;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                word-spacing: 0.4rem;
+                margin: 4rem 0 1.2rem 0;
+            }
+
+            .button {
+                padding: 0.6rem 1.2rem;
+                transition: all 0.3s;
+                margin-bottom: 4rem;
+            }
+            
+            .button:first-of-type {
+                margin-right: 0.5rem;
+            }
+
+            .button:hover {
+                background-color: #8D0000;
+                color: #FFF;
+            }
+
+            main {
+                margin: 0 5% 0 5%;
+            }
+
+            section {
+                margin: 2rem;
+                margin-top: 0;
+                padding: 1rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                padding-top: 3rem;
+                padding-bottom: 2rem;
+            }
+
+            #profile,
+            #about-gallery {
+                border: 0.5rem solid rgba(0, 0, 0, 0.8);
+                float: left;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            #profile {
+                border-radius: 50%;
+                width: 10rem;
+            }
+
+            #about-gallery {
+                border-radius: 0.5rem;
+            }
+
+            section p {
+                font-size: 1.03rem;
+                text-align: justify;
+            }
+
+            #bests {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            #bests img {
+                width: 25%;
+                height: 8rem;
+                object-fit: cover;
+                float: left;
+                opacity: 0.4;
+                transition: all 0.3s;
+            }
+
+            #bests img:hover {
+                opacity: 1;
+            }
+
+            #bests img:nth-of-type(1),
+            #bests img:nth-of-type(2),
+            #bests img:nth-of-type(3) {
+                padding-right: 0.3rem;
+                padding-bottom: 0.3rem;
+            }
+
+            #bests img:nth-of-type(4) {
+                padding-bottom: 0.3rem;
+            }
+
+            #bests img:nth-of-type(5),
+            #bests img:nth-of-type(6),
+            #bests img:nth-of-type(7) {
+                padding-bottom: 0;
+                padding-right: 0.3rem;
+            }
+
+            hr {
+                margin: 0 3rem;
+            }
+
+            footer {
+                background-color: #000;
+                color: #FFF;
+                padding: 1.5rem;
+            }
+
+            span {
+                display: inline-block;
+                margin: 0 2rem;
+                font-size: 0.8rem;
+            }
+
+        }
+
+        @media screen and (min-width: 776px) and (max-width: 1160px) {
+
+            /* 1160 - 965 */
+            html {
+                font-size: 20px;
+            }
+
+            #about-gallery {
+                width: 50%;
+            }
+
+            nav li {
+                margin-top: 2.2rem;
+            }
+        }
+
+        @media screen and (min-width: 776px) and (max-width: 965px) {
+            /* 965 - 866 */
+
+            h1 {
+                font-size: 2rem;
+                margin: 1.5rem;
+            }
+
+            section {
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                padding-top: 1rem;
+            }
+
+            #bests img {
+                width: 50%;
+            }
+
+            #bests img:nth-of-type(1),
+            #bests img:nth-of-type(3),
+            #bests img:nth-of-type(5) {
+                padding-right: 0.3rem;
+                padding-bottom: 0.3rem;
+            }
+
+            #bests img:nth-of-type(2),
+            #bests img:nth-of-type(4),
+            #bests img:nth-of-type(6) {
+                padding-bottom: 0.3rem;
+            }
+
+            #bests img:nth-of-type(7) {
+                padding-right: 0.3rem;
+            }
+        }
+
+        @media screen and (min-width: 776px) and (max-width: 866px) {
+
+            /* 866 - 775 */
+            h1 {
+                margin-left: 0;
+            }
+
+            nav li {
+                margin-right: 1rem;
+            }
+
+            span {
+                font-size: 0.8rem;
+                margin: 0 1rem;
+            }
+        }
+
+        @media screen and (max-width: 775px) {
+            header {
+                padding: 10px 10px 10px 10px;
+                background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav {
+                width: 100%;
+                height: 100px;
+                border-radius: 50px;
+                overflow: hidden;
+                position: relative;
+            }
+            nav img {
+                width: 80px;
+                border-radius: 50%;
+                border: 4px solid #8D0000;
+                float: left;
+                margin: 10px;
+            }
+            h1 {
+                text-align: center;
+                display: block;
+                transform: translate(-5%,90%);
+                font-size: 30px;
+            }
+            nav ul {
+                display: block;
+                position: sticky;
+                top: 10px;
+                left: 10px;
+                background-color: aquamarine;
+            }
+            nav::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #general {
+                display: none;
+            }
+            #hidden {
+                position: sticky;
+                top: 0px;
+                z-index: 1;
+            }
+            #hidden ul {
+                list-style: none;
+            }
+            #hidden li {
+                width: 33.3333%;
+                display: inline-block;
+                float: left;
+                background-color: rgba(0, 0, 0, 0.6);
+                
+                text-align: center;
+                border-right: 4px solid white;
+            }
+            #hidden li:last-of-type {
+                border: 0;
+            }
+            #hidden a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #FFF;
+                padding: 10px 2px;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            #hidden li:last-of-type a { /* Can be used for lining */
+            }
+            
+            h2 {
+                margin-top: 40px;
+                margin-bottom: 30px;
+                padding: 0 10px;
+            }
+            .button {
+                padding: 5px 20px;
+                color: #FFF;
+                border: 4px solid #8D0000;
+                margin-bottom: 40px;
+            }
+            .button:first-of-type {
+                margin-right: 20px;
+            }
+            body {
+                background-color: #C8C1E2;
+            }
+            section {
+                background-color: #C8C1E2;
+                padding: 15px;
+                padding-bottom: 40px;
+            }
+            section:first-of-type {
+                margin-top: 10px;
+            }
+            #profile {
+                width: 40%;
+                float: left;
+                border: 4px solid #8D0000;
+                margin-right: 20px;
+                border-radius: 4px;
+            }
+            h3 {
+                margin: 20px 0 30px 0;
+            }
+            section p{
+                font-size: 20px;
+                text-align: justify;
+            }
+            #about-gallery {
+                width: 80%;
+                transform: translate(12.4%, 0);
+                border-radius: 4px;
+                border: 4px solid #8D0000;
+                margin-bottom: 20px;
+            }
+            #bests {
+                font-size: 0; /* ENTERESAN */
+                border: 4px solid #8D0000;
+                border-radius: 4px;
+                background-color: #8D0000;
+            }
+            #bests img {
+                width: 100%;
+                margin-bottom: 4px;
+                object-fit: cover;
+            }
+            #bests img:nth-of-type(2), #bests img:nth-of-type(3), #bests img:nth-of-type(7), #bests img:nth-of-type(8) {
+                width: 50%;
+            }
+            #bests img:nth-of-type(2), #bests img:nth-of-type(7) {
+                padding-right: 2px;
+            }
+            #bests img:nth-of-type(3), #bests img:nth-of-type(8) {
+                padding-left: 2px;
+            }
+            #bests img:nth-of-type(7), #bests img:nth-of-type(8) {
+                margin-bottom: 0;
+            }
+            footer {
+                background-color: #000;
+                color: #FFF;
+                padding-top: 10px;
+            }
+            span:last-of-type {
+                display: block;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+            span:nth-of-type(1) {
+                margin-right: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.gif" alt="Logo">
+            <h1>Ekin's Gallery</h1>
+            <div id="general">
+                <ul>
+                <li><a href="">Test 1</a></li>
+                <li><a href="">Test 2</a></li>
+                <li><a href="http://ekinaslan.com">Other Example</a></li>
+            </ul>
+            </div>
+        </nav>
+        <center>
+            <h2>New abstract collection has been released</h2>
+            <a class="button" href="">Test 3</a>
+            <a class="button" href="#me">About Me</a>
+        </center>
+    </header>
+    <div id="hidden">
+                <ul>
+                <li><a href="">Test 1</a></li>
+                <li><a href="">Test 2</a></li>
+                <li><a id="other" href="http://ekinaslan.com">Other Example</a></li>
+            </ul>
+    </div>
+    <div class="clearfix"></div>
+    <main>
+        <section>
+            <h3 id="me">Welcome to My Gallery</h3>
+            <img id="profile" src="profile.jpg" alt="Ekin">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nemo nihil, nulla eum aliquid, quam, dolore commodi inventore eius soluta quod repellendus explicabo quasi, accusantium doloribus est animi ex aperiam eos natus facilis non voluptatum doloremque ipsam. Ut quae optio perspiciatis nulla, neque, repellat, quibusdam, ullam deleniti fugit voluptatum repudiandae eaque culpa eos molestias excepturi. Libero tempora earum blanditiis odio eum id. Itaque voluptas omnis illum perspiciatis libero quasi quae eaque sed reprehenderit magnam tempore.</p>
+        </section>
+        <hr>
+        <section>
+            <h3>About Gallery</h3>
+            <img id="about-gallery" src="1.jpg" alt="About Gallery">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat sapiente beatae, rem est error illum debitis, voluptatibus blanditiis odio ullam architecto, sit cumque nemo! Ab voluptas optio molestiae doloribus ut eos, iure exercitationem vel autem omnis ducimus, reprehenderit asperiores minima eveniet deserunt distinctio facere doloremque. Enim dignissimos at harum, voluptatum, quae neque cumque, nam nesciunt totam atque ratione ullam laborum velit earum voluptas eum libero? Magnam corporis, tempora consequuntur ab porro enim, quos sapiente mollitia officiis, illo ducimus atque ratione odio. Nulla vitae natus debitis atque, quod et perferendis itaque ipsum magnam ad ducimus expedita quo rerum, ex assumenda, tempore recusandae distinctio labore cum, error molestiae. Similique quas, neque iste. Quam eos maxime ratione, sint reprehenderit iste? Voluptatem culpa veniam repellat excepturi voluptas aperiam qui quisquam ad nobis neque. Itaque dolore iure, necessitatibus rem excepturi incidunt. Consequatur officiis asperiores provident! Tenetur at quod nesciunt a. Consequatur eos, nemo iusto earum optio quibusdam officiis, velit, culpa voluptates distinctio accusantium at. Quas magnam voluptas saepe nobis.</p>
+        </section>
+        <hr>
+        <section>
+            <h3>My Best Pictures</h3>
+            <div id="bests">
+                <img src="2.jpg" alt="1">
+                <img src="3.jpg" alt="2">
+                <img src="4.jpg" alt="3">
+                <img src="5.jpg" alt="4">
+                <img src="6.jpg" alt="5">
+                <img src="7.jpg" alt="6">
+                <img src="8.jpg" alt="7">
+                <img src="9.jpg" alt="8">
+                <div class="clearfix"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <center><span>+905123456789</span>
+            <span>ekin.java@gmail.com</span>
+            <span>© 2020 Ekin Aslan. All rights reserved.</span>
+        </center>
+    </footer>
+</body>
+
+</html>

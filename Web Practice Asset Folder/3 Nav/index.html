@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            <!-- border-collapse: collapse; -->
+        }
+        table {
+            width: 35%;
+            border-spacing: 14px;
+        }
+        th, td {
+            padding: 16px; 
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111111;
+        }
+        .li {
+            float: left;
+        }
+        
+        .ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        <!-- id belirtmek için #idname -->
+    </style>
+    <body>
+        <h2>Navigation Menu</h2>
+        <ul class = "ul">
+            <li class="li"><a href="#home">Home</a></li>
+            <li class="li"><a href="#news">News</a></li>
+            <li class="li"><a href="#contact">Contact</a></li>
+            <li class="li"><a href="#about">About</a></li>
+        </ul>
+        
+        <br>
+        <table>
+            <caption>Başlık</caption>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Kimlik</th> <!-- colspan = "2" yaparsan ikiye ayrılır -->
+                <!-- th td th td gibi gidersen yatay olur -->
+                <!-- yatayı bölmek için rowspan = "2 veya 3, 4" -->
+            </tr>
+            <tr>
+                <td>Ekin Aslan</td>
+                <td>19438573663</td>
+            </tr>
+            <tr>
+                <td>Tunç Aslan</td>
+                <td>12312312312</td>
+            </tr>
+            <tr>
+                <td>Duran Aslan</td>
+                <td>34534534534</td>
+            </tr>
+            <tr>
+                <td>Ayfer Aslan</td>
+                <td>57657657676</td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <ul>
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Şalgam</li>
+        </ul>
+        
+        <h3>Cities</h3>
+        <dl>
+            <dt>Rossalina</dt>
+            <dd>- Major City of Umuos</dd>
+            <dt>Akkenalit</dt>
+            <dd>- Southern Region of Banaria</dd>
+        </dl>
+        <br>
+        
+        <ol>
+            <li>Blei</li>
+            <li>Sierra</li>
+            <li>United States of Khyrza</li>
+                <ul>
+                    <li>Teukgicne</li>
+                    <li>Ekiza</li>
+                    <li>Gyulnxal</li>
+                </ul>
+            <li>Spenec Islands</li>
+        </ol>
+    </body>
+</html>

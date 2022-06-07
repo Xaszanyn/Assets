@@ -1,0 +1,11 @@
+.orta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: %100;
+    align-self: center
+}
+.auto {
+    align-content: center;
+    align-self: center;
+}
