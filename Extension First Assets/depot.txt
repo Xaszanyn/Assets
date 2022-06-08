@@ -1,0 +1,7 @@
+"page_action": {
+        "default_icon": {
+            "16": "/images/G16.png",
+            "48": "/images/G48.png",
+            "128": "/images/G128.png"
+        }
+    },
