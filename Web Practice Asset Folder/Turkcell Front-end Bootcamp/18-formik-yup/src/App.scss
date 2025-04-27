@@ -1,0 +1,24 @@
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 960px,
+//   xxl: 960px,
+// );
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+p.text-danger {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.1s 0.1s, height 0.2s;
+
+  &.active {
+    opacity: 1;
+    height: 2rem;
+  }
+}
+
+main {
+  min-height: 45rem;
+}
